@@ -1,0 +1,313 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@font-face {
+  font-family: "Beyond";
+  src: url(../font/beyond_the_mountains.otf) format("truetype"),
+    url(../font/beyond_the_mountains.ttf) format("opentype");
+}
+:root {
+  --topbar-height: 3.6rem;
+  --white-color: white;
+  --primary-color: #fa9e1b;
+  --bg-btn: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+  --bg-section: linear-gradient(to right, #fa9e1b, #8d4fff);
+  --black-color: #2d2c2c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1000px;
+}
+a {
+  text-decoration: none;
+}
+i {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+/* FONT */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@font-face {
+  font-family: "Beyond";
+  src: url(../font/beyond_the_mountains.otf) format("truetype"),
+    url(../font/beyond_the_mountains.ttf) format("opentype");
+}
+/* BUTTON */
+/*  */
+/* HEADER */
+
+.header-topbar {
+  height: var(--topbar-height);
+  background-color: rgb(53, 10, 78);
+}
+.header-topbar li:hover a {
+  color: var(--primary-color);
+  transition: all 300ms ease;
+}
+.header-topbar__contact ul {
+  display: flex;
+  align-items: center;
+  height: var(--topbar-height);
+}
+.header-topbar__contact li a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+.header-topbar__login ul {
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-topbar li a {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  padding: 0 2px;
+  text-transform: uppercase;
+}
+.header-nav {
+  background-color: rgba(54, 19, 84, 0.6);
+  padding: 3.6rem 0;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+.logo__link {
+  display: flex;
+  align-items: center;
+}
+.logo__text {
+  color: var(--white-color);
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+.nav-menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-menu__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu__link {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  font-weight: 540;
+  text-transform: uppercase;
+  margin-right: 3.6rem;
+  position: relative;
+}
+.nav-menu__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -1px;
+  bottom: -8px;
+  width: calc(100% + 2px);
+  height: 2px;
+  opacity: 0;
+  transition: all 300ms ease;
+  background: linear-gradient(to right, #fa9e1b, #8d4fff);
+}
+.active .nav-menu__link::after {
+  opacity: 1;
+}
+.nav-menu__item:hover .nav-menu__link::after {
+  opacity: 1;
+}
+.header-search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-search__icon {
+  display: contents;
+  text-align: right;
+  color: var(--white-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header-search__icon:hover {
+  color: var(--primary-color);
+  transition: all 300ms ease;
+}
+/* HOME */
+.home {
+  position: relative;
+}
+.home-background {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)),
+    url("https://tranhoangkhang1212.github.io/travelix/assets/images/bg_header.webp");
+}
+.home-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-title__heading {
+  font-size: 11.2rem;
+  color: var(--white-color);
+  font-weight: 900;
+}
+.home-title__heading:last-child {
+  font-family: "Beyond";
+  font-size: 10rem;
+  text-align: center;
+}
+/*home button */
+.btn {
+  display: inline-block;
+  height: 53px;
+  border-radius: 27px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-btn:hover .btn-animation {
+  transform: translateX(-50%);
+}
+.btn-bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: var(--bg-btn);
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+.btn-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 53px;
+  padding-left: 46px;
+  padding-right: 46px;
+  white-space: nowrap;
+  position: relative;
+}
+.btn-link span {
+  display: inline-block;
+  background-color: white;
+  width: 5.5px;
+  height: 5.5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+.btn-link span:first-child {
+  margin-left: 1rem;
+}
+.btn-link span:nth-child(2) {
+  opacity: 0.6;
+}
+.btn-link span:last-child {
+  opacity: 0.4;
+}
+/* SEARCH */
+.search {
+  position: relative;
+  background: var(--bg-section);
+}
+.search-option {
+  background-color: white;
+  position: absolute;
+  bottom: 100%;
+  border-top-left-radius: 9.4rem;
+  border-top-right-radius: 9.4rem;
+}
+.search-option__list {
+  display: flex;
+}
+
+.search-option__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 3.8rem 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.search-option__item:first-child {
+  border-top-left-radius: 9.4rem;
+  padding-left: 7px;
+}
+.search-option__item:last-child {
+  border-top-right-radius: 9.4rem;
+  padding-right: 7px;
+}
+.search-option__item:hover {
+  background-color: var(--primary-color);
+}
+.search-option__item:hover .search-option__desc {
+  color: var(--white-color);
+}
+.search-option__item:hover .search-option__icon {
+  filter: brightness(200%) grayscale(100%);
+}
+.search-option__item.active {
+  background-color: var(--primary-color);
+}
+.search-option__item.active .search-option__icon {
+  filter: brightness(200%) grayscale(100%);
+}
+.search-option__item.active .search-option__desc {
+  color: var(--white-color);
+}
+.search-option__icon {
+  margin-right: 1.4rem;
+}
+.search-option__desc {
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.search-destination {
+  padding: 6rem 0;
+}
+.search__item h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+.search__item-input {
+  width: 100%;
+  padding: 1.5rem;
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: 550;
+  color: #929191;
+  outline: none;
+}

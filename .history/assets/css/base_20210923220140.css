@@ -1,0 +1,33 @@
+:root {
+  --topbar-height: 3.6rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+i {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+/* FONT */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@font-face {
+  font-family: "Beyond";
+  src: url(../font/beyond_the_mountains.otf) format("truetype"),
+    url(../font/beyond_the_mountains.ttf) format("opentype");
+}
+/* HEADER */
+.header-topbar {
+  height: var(--topbar-height);
+  background-color: rgb(53, 10, 78);
+}

@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@font-face {
+  font-family: "Beyond";
+  src: url("../fonts/beyond_the_mountains.otf") format("truetype"),
+    url("../fonts/beyond_the_mountains.ttf") format("opentype");
+}
+
+:root {
+  --topbar-height: 3.6rem;
+  --white-color: white;
+  --primary-color: #fa9e1b;
+  --bg-btn: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+  --bg-section: linear-gradient(to top right, #fa9e1b, #8d4fff);
+  --black-color: #2d2c2c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+}
+i {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+/* FONT */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@font-face {
+  font-family: "Beyond";
+  src: url(../font/beyond_the_mountains.otf) format("truetype"),
+    url(../font/beyond_the_mountains.ttf) format("opentype");
+}
+/* BUTTON */
+/*  */
+/* HEADER */
+
+.header-topbar {
+  height: var(--topbar-height);
+  background-color: rgb(53, 10, 78);
+}
+.header-topbar li:hover a {
+  color: var(--primary-color);
+  transition: all 300ms ease;
+}
+.header-topbar__contact ul {
+  display: flex;
+  align-items: center;
+  height: var(--topbar-height);
+}
+.header-topbar__contact li a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+.header-topbar__login ul {
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-topbar li a {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  padding: 0 2px;
+  text-transform: uppercase;
+}
+.header-nav {
+  background: rgba(54, 19, 84, 0.85);
+  padding: 3.6rem 0;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+.logo__link {
+  display: flex;
+  align-items: flex-end;
+}
+.logo__text {
+  color: var(--white-color);
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+.nav-menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-menu__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu__link {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  font-weight: 540;
+  text-transform: uppercase;
+  margin-right: 3.6rem;
+  position: relative;
+}
+.nav-menu__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -1px;
+  bottom: -8px;
+  width: calc(100% + 2px);
+  height: 2px;
+  opacity: 0;
+  transition: all 300ms ease;
+  background: linear-gradient(to right, #fa9e1b, #8d4fff);
+}
+.active .nav-menu__link::after {
+  opacity: 1;
+}
+.nav-menu__item:hover .nav-menu__link::after {
+  opacity: 1;
+}
+.header-search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-search__icon {
+  display: contents;
+  text-align: right;
+  color: var(--white-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header-search__icon:hover {
+  color: var(--primary-color);
+  transition: all 300ms ease;
+}
+/* HOME */
+.home {
+  position: relative;
+}
+.home-background {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)),
+    url("https://tranhoangkhang1212.github.io/travelix/assets/images/bg_header.webp");
+}
+.home-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-title__heading {
+  font-size: 9.2rem;
+  color: var(--white-color);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.home-title__heading:nth-child(2) {
+  font-family: Beyond;
+  font-size: 8rem;
+  text-align: center;
+}
+/*home button */
+.btn {
+  display: inline-block;
+  border-radius: 27px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn:hover .btn-bg {
+  transform: translateX(-50%);
+}
+.btn-bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: var(--bg-btn);
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+.btn-link {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 2.2rem 0;
+  padding-left: 46px;
+  padding-right: 46px;
+  white-space: nowrap;
+  position: relative;
+}
+.btn-link span {
+  display: inline-block;
+  background-color: white;
+  width: 5.5px;
+  height: 5.5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+.btn-link span:first-child {
+  margin-left: 1rem;
+}
+.btn-link span:nth-child(2) {
+  opacity: 0.6;
+}
+.btn-link span:last-child {
+  opacity: 0.4;
+}
+/* CONTACT FORM */
+.contact {
+  margin-top: 10.3rem;
+  width: 100%;
+  padding-bottom: 105px;
+  position: relative;
+}
+.contact-background {
+  position: absolute;
+  bottom: -34px;
+  width: 100%;
+  height: 114%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.contact-container {
+  position: relative;
+  z-index: 2;
+}
+.contact-form {
+  background: var(--bg-section);
+  padding: 8.4rem 7.6rem 4.8rem;
+}
+.form-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 8.6rem;
+}
+.form-input {
+  color: var(--white-color);
+  font-size: 1.6rem;
+  padding: 1rem;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  margin-bottom: 3rem;
+  outline: none;
+}
+.form-input::-webkit-input-placeholder {
+  color: white;
+  font-size: 1.4rem;
+}
+.input-messages {
+  /* height: 126px; */
+}
+.contact-btn {
+  margin-top: 5rem;
+  border-radius: 2.7rem;
+  background-color: #31124b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.contact-btn .btn-link {
+  padding: 22px 29px;
+}
+/* FOOTER */
+.footer {
+  background: #31124b;
+  padding: 8.5rem 10.3rem 11.8rem;
+  /* position: absolute; */
+}
+.footer__item {
+  position: relative;
+}
+.footer__logo {
+  position: absolute;
+  top: -2.9rem;
+}
+.footer__about {
+  padding-top: 67px;
+}
+.footer__about-desc {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white-color);
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+.social-list {
+  display: flex;
+}
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 50%;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary-color);
+}
+.social-item:hover {
+  background-color: var(--primary-color);
+}
+.social-item a i {
+  font-size: 10px;
+  color: var(--white-color);
+}
+.footer__blog-item {
+  display: flex;
+  margin-bottom: 2.1rem;
+}
+.footer__blog-item img {
+  margin-right: 20px;
+}
+.footer__blog-content {
+  display: flex;
+  flex-direction: column;
+}
+.footer__blog-title {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  margin-bottom: 1.4rem;
+  cursor: pointer;
+}
+.footer__blog-title:hover {
+  color: var(--primary-color);
+}
+.footer__blog-date {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+.tag__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease;
+  float: left;
+  cursor: pointer;
+}
+.tag__item:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+.tag__item a {
+  color: var(--white-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.contact__info-item {
+  display: flex;
+}
+.contact__info-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 8px;
+}
+.contact__info-text {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+.copyright {
+  background: #1f0733;
+  padding: 20px 0;
+}
+.copyright__container {
+  color: var(--white-color);
+  font-size: 1.6rem;
+}
+.copyright__container a {
+  color: blue;
+}
+.copyright__container i {
+  display: contents;
+  color: red;
+}

@@ -1,0 +1,76 @@
+:root {
+  --topbar-height: 3.6rem;
+  --white-color: white;
+  --primary-color: #fa9e1b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+i {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+/* FONT */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@font-face {
+  font-family: "Beyond";
+  src: url(../font/beyond_the_mountains.otf) format("truetype"),
+    url(../font/beyond_the_mountains.ttf) format("opentype");
+}
+/* HEADER */
+
+.header-topbar {
+  height: var(--topbar-height);
+  background-color: rgb(53, 10, 78);
+}
+.header-topbar li:hover a {
+  color: var(--primary-color);
+}
+.header-topbar__contact ul {
+  display: flex;
+  align-items: center;
+  height: var(--topbar-height);
+}
+.header-topbar__contact li a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+.header-topbar__login ul {
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-topbar li a {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  padding: 0 2px;
+  text-transform: uppercase;
+}
+.header-nav {
+  background-color: rgba(54, 19, 84, 0.6);
+  padding: 3.6rem 0;
+}
+.header-nav__container {
+}
+.nav-menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
