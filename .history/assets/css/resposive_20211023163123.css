@@ -1,0 +1,22 @@
+/* MOBILE */
+@media (max-width: 740px) {
+  /* HEADER */
+  .header-search {
+  }
+}
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+/* computer */
+@media (min-width: 1024px) {
+  .header-search {
+    justify-content: center;
+  }
+  .search-destination__btn {
+    padding: 2rem 4rem;
+    display: inline-block;
+  }
+  .search-destination__btn .btn-link {
+    padding: 0;
+  }
+}

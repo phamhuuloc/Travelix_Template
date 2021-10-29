@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Beyond The Mountains';
+    src: url('BeyondTheMountains.woff2') format('woff2'),
+        url('BeyondTheMountains.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Beyond The Mountains';
+    src: url('BeyondTheMountains.woff2') format('woff2'),
+        url('BeyondTheMountains.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Beyond';
+    src: url('Beyond.woff2') format('woff2'),
+        url('Beyond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

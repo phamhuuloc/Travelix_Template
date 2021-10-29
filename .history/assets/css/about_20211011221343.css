@@ -1,0 +1,17 @@
+.home-background {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.home__title {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home__title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white-color);
+}

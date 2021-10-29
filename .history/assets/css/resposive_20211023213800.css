@@ -1,0 +1,106 @@
+/* MOBILE */
+@media (max-width: 740px) {
+  /* HEADER */
+
+  .tours__item {
+    margin-bottom: 5.2rem;
+  }
+
+  .package {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+  .trending__container,
+  .offers__item,
+  .contact-container,
+  .tours__select,
+  .testimonials__list {
+    padding: 0 2.2rem;
+  }
+  .offers {
+    margin-bottom: 8rem;
+  }
+  .footer {
+    padding: 8.5rem 2.2rem;
+  }
+  .footer__item {
+    margin-bottom: 1.8rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 599px) {
+  .header-nav {
+    padding: 1rem 0;
+  }
+  .home-title__heading {
+    font-size: 4rem;
+  }
+  .home-title__heading:nth-child(2) {
+    font-size: 2.6rem;
+  }
+  .logo__text {
+    font-size: 2rem;
+  }
+  .btn-link {
+    padding: 1.4rem 0;
+  }
+}
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .nav-menu {
+    display: none;
+  }
+  .search-option__list {
+  }
+  .tours__item {
+    margin-bottom: 5rem;
+  }
+  .package__desc {
+    font-size: 1.6rem;
+    max-width: 47.5rem;
+  }
+  .package__rating.rating {
+    margin-bottom: 1.2rem;
+  }
+  .footer {
+    padding: 8.5rem 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1370px) {
+  .contact-background {
+    height: 85%;
+  }
+}
+/* computer */
+
+@media (min-width: 1024px) {
+  .logo__text {
+    font-weight: 2.8rem;
+  }
+  .header-search {
+    justify-content: center;
+  }
+  .search-destination__btn {
+    padding: 2rem 3rem;
+    display: inline-block;
+  }
+  .search-destination__btn .btn-link {
+    padding: 0;
+  }
+  .testimonials__quote-text {
+    font-size: 1.4rem;
+  }
+  .testimonials__quote-title {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    padding: 8.5rem 0;
+  }
+  .footer__about-desc {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .footer__item-title {
+    font-size: 1.6rem;
+  }
+}

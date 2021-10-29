@@ -1,0 +1,12 @@
+.home__title {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home__title h1 {
+  font-size: 7.2rem;
+  font-weight: 800;
+  color: var(--white-color);
+  text-transform: uppercase;
+}

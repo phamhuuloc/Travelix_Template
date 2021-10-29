@@ -1,0 +1,11 @@
+.body {
+  height: 1000px;
+}
+.home-background {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.home-title {
+}
